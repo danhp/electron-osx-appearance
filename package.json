@@ -1,0 +1,34 @@
+{
+  "name": "electron-osx-appearance-settings",
+  "version": "0.0.0",
+  "description": "APIs to access the OS X Appearance Settings.",
+  "license": "MIT",
+  "repository": "phamdaniel/electron-osx-appearance-settings",
+  "author": {
+    "name": "Daniel Pham",
+    "email": "pham.dany@gmail.com",
+    "url": "github.com/danhp"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "electron",
+    "appearance",
+    "settings",
+    "osx"
+  ],
+  "devDependencies": {
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
