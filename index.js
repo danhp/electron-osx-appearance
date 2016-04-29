@@ -8,7 +8,7 @@ exports.unsubscribe = id => {
 
 /* DARK MODE */
 exports.isDarkMode = () => {
-	return prefs.isDarkMode();
+	return prefs.getUserDefault('AppleInterfaceStyle', 'string') === 'Dark';
 };
 
 exports.onDarkModeChanged = callback => {
@@ -17,11 +17,11 @@ exports.onDarkModeChanged = callback => {
 
 /* TINT */
 exports.isTintBlue = () => {
-	return prefs.getUserDefault('AppleAquaColorVariant', 'int') === 1;
+	return prefs.getUserDefault('AppleAquaColorVariant', 'string') === '1';
 };
 
 exports.getTint = () => {
-	return prefs.getUserDefault('AppleAquaColorVariant', 'int') === 1 ? 'blue' : 'graphite';
+	return prefs.getUserDefault('AppleAquaColorVariant', 'string') === '1' ? 'blue' : 'graphite';
 };
 
 exports.onTintChanged = callback => {
@@ -44,11 +44,11 @@ exports.onHighlightColourChanged = callback => {
 
 /* SIDEBAR ICON SIZE */
 exports.getSidebarIconSize = () => {
-	const iconSize = prefs.getUserDefault('NSTableViewDefaultSizeMode', 'int');
+	const iconSize = prefs.getUserDefault('NSTableViewDefaultSizeMode', 'string');
 
 	switch (iconSize) {
-		case 1: return 'small';
-		case 3: return 'large';
+		case '1': return 'small';
+		case '3': return 'large';
 		default: return 'medium';
 	}
 };
@@ -68,7 +68,7 @@ exports.onScrollbarVisibilityChanged = callback => {
 
 /* SCROLLBAR PAGING */
 exports.isScrollbarPaging = () => {
-	return prefs.getUserDefault('AppleScrollerPagingBehaviour', 'int') === 0;
+	return prefs.getUserDefault('AppleScrollerPagingBehavior', 'boolean');
 };
 
 exports.onScrollbarPagingChanged = callback => {
