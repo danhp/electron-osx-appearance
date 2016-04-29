@@ -1,4 +1,4 @@
-# electron-osx-appearance [![Build Status](https://travis-ci.com/danhp/electron-osx-appearance-settings.svg?token=npDpgR9m6qtpCb8XFaX9&branch=master)](https://travis-ci.com/danhp/electron-osx-appearance-settings)
+# electron-osx-appearance
 
 > APIs for accessing the OS X Appearance Settings.
 
