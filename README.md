@@ -1,20 +1,24 @@
-# electron-osx-appearance-settings [![Build Status](https://travis-ci.com/danhp/electron-osx-appearance-settings.svg?token=npDpgR9m6qtpCb8XFaX9&branch=master)](https://travis-ci.com/danhp/electron-osx-appearance-settings)
+# electron-osx-appearance [![Build Status](https://travis-ci.com/danhp/electron-osx-appearance-settings.svg?token=npDpgR9m6qtpCb8XFaX9&branch=master)](https://travis-ci.com/danhp/electron-osx-appearance-settings)
 
 > APIs for accessing the OS X Appearance Settings.
 
 Requires:
 * **Electron >=0.37.8**
 
+## Why?
+
+* Simple function calls instead of having to remember the name and types of each setting you need to access.
+
 ## Install
 
 ```
-$ npm install --save electron-osx-appearance-settings
+$ npm install --save electron-osx-appearance
 ```
 
 ## Usage
 
 ```js
-const osxPrefs = require('electron-osx-appearance-settings');
+const osxPrefs = require('electron-osx-appearance');
 
 
 if (process.platform === 'darwin') {
