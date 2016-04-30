@@ -8,7 +8,7 @@ exports.unsubscribe = id => {
 
 /* DARK MODE */
 exports.isDarkMode = () => {
-	return prefs.getUserDefault('AppleInterfaceStyle', 'string') === 'Dark';
+	return prefs.isDarkMode();
 };
 
 exports.onDarkModeChanged = callback => {
