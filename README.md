@@ -50,9 +50,9 @@ Returns `true` if the system is in Dark Mode, and `false` otherwise.
 
 * `callback` Function
 
-Substribe to the Dark Mode changed event. Runs `callback` when event is fired.
+Subscribe to the Dark Mode changed event. Runs `callback` when event is fired.
 
-Returns the `id` with which you can then unsubscribe with.
+Returns the `id` with which you can then unsubscribe.
 
 ### `isTintBlue()`
 
