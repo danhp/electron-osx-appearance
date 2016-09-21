@@ -1,5 +1,6 @@
 'use strict';
 const electron = require('electron');
+
 const prefs = electron.systemPreferences || electron.remote.systemPreferences;
 
 exports.unsubscribe = id => {
